@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<meta charset=utf-8 />
+		<title>SyslogDM</title>
+	</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="#">SyslogDM</a>
+					<form class="navbar-form pull-right">
+						<input id="limit" placeholder="Limit" class="span1">
+						<input id="host" placeholder="Host" class="span2">
+						<input id="prio" placeholder="Priority" class="span2">
+						<input id="prog" placeholder="Program" class="span2">
+						<button type="submit" class="btn">Apply</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Date</th>
+						<th>Host</th>
+						<th>Message</th>
+						<th>Priority</th>
+						<th>Program</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		<div class="navbar navbar-inverse navbar-fixed-bottom">
+			<div class="navbar-inner">
+				<div class="container navbar-text">
+					<a id="prev" class="btn btn-small" href="#"><i class="icon-step-backward"></i>Previous</a>
+					<div class="pull-right">
+						<a id="next" class="btn btn-small" href="#">Next<i class="icon-step-forward"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
+
